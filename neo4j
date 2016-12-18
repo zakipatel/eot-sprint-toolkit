@@ -1,0 +1,80 @@
+<b>Idea</b>
+- A tool to visualize/represent/understand/analyze EPA datasets using graph databases
+- Something very similar to ICYJ Panama Papers tool for the #DataRefuge #DataRescue #GuerillaArchiving projects!
+
+
+# How it Works
+- Take as input the various <a href="#InputDataSources">lists</a> that folks are creating 
+- Model this input as a graph database, using Neo4j
+- Import  a Neo4j database 
+
+
+Context
+- People are creating lists of the data, and flagging for protection
+- We want to set up this data and others as a graph database using Neo4j
+
+Objectives
+- Uncover structures
+- environmental scientists to do analyses 
+
+
+How to Use 
+- Download the Neo4J database here 
+- Requirements:
+  - ..
+  - ..
+  - ..
+
+
+Input Data Sources
+- Gureilla Archiving Event in Toronto, Hackathon Group 1 : 
+- <a href="http://www.ppehlab.org/datarefuge">PPEH Lab Data Refuge </a> : Gov Climate Datasets Archive
+- https://nepis.epa.gov/EPA/html/pubs/pubtitle.html
+
+
+Project involves:
+- import data into a network graph
+- connecting the EPA to other entities 
+- documenting meta-data 
+
+
+
+
+- We think there is value in creating a view of the EPA data that is out there. 
+- Use the power of big data anlaysis
+
+
+
+ICYJ Approach
+- They extracted the metadata of documents using Apache Solr and Tika, 
+- Then connected all the information together using the leaked databases, 
+- Creating a graph of nodes and edges in Neo4j and 
+- Made it accessible using Linkurious’ visualization application. 
+ 
+
+
+track these interactions over time to observe how these datasets are changing, is the shape of the map changing? 
+
+Give us the ability to:
+check whether previous links are still active, and 
+whether shifts in the network indicate which sections of the data are vulnerable.
+track which data sets have already been archived. 
+Help assess which data sets are vulnerable 
+based on changes in the network 
+and archival history.
+
+When we rerun the script, we can track where our network is growing as the amount of data being archived increases,  
+but also seeing where the data is disappearing or being deleted. 
+
+
+
+
+
+
+Contributors
+
+
+Inspiration
+ICYJ 
+
+
