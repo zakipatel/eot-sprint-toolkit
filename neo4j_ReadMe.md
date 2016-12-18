@@ -18,7 +18,7 @@ This is a draft
   - Detect shifts in vulerability 
 
 # Steps
-- Model the EPA data universe and nominations as a graph using Neo4j 
+- Model the EPA data universe and nominations as a graph - implement using Neo4j 
 - Seed the graph with source data - use data from nomination and scraping projects as data source for the graph model 
 - Process on how to add relationships to the data model 
 - Ability to visualize, browse and query EPA data by value, vulnerability, archival status and other properties
@@ -31,7 +31,7 @@ This is a draft
   - Other Events: 
   - Other Projects: 
 
-- Seed Data 
+# Seed Data 
   -  Gureilla Archiving Event in Toronto, Hackathon Group 1 : 
   - <a href="http://www.ppehlab.org/datarefuge">PPEH Lab Data Refuge </a> : Gov Climate Datasets Archive
   - https://nepis.epa.gov/EPA/html/pubs/pubtitle.html
@@ -48,12 +48,11 @@ This is a draft
 
 
 # How to Use 
-- Download the Neo4J database here 
-- Requirements:
-  - ..
-  - ..
-  - ..
-
+- Download the Neo4J database and start exploring
+- Cypher Scripts:
+  - Import new data lists
+  - Define new relationships
+  - Update archival status
 
 # Challenges
 - Data quality : completeness, duplicates, currency
