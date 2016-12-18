@@ -1,9 +1,9 @@
-<b>Idea</b>
+* Idea
 - A tool to visualize/represent/understand/analyze EPA datasets using graph databases
 - Something very similar to ICYJ Panama Papers tool for the #DataRefuge #DataRescue #GuerillaArchiving projects!
 
 
-# How it Works
+* How it Works
 - Take as input the various <a href="#InputDataSources">lists</a> that folks are creating 
 - Model this input as a graph database, using Neo4j
 - Import  a Neo4j database 
