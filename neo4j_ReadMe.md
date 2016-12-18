@@ -1,25 +1,53 @@
+This is a draft
+
 # Idea
-- A tool to visualize/represent/understand/analyze EPA datasets using graph databases
-- Something very similar to ICYJ Panama Papers tool for the #DataRefuge #DataRescue #GuerillaArchiving projects!
-
-# Why
-- People are creating lists of the data, and flagging for protection i.e data catalogs
-- We want to use this data, not for scraping, but to help understand the data sets 
-- Technology can help uncover structures in this data 
-
-
-# How it Works
 - Take as input the various <a href="#InputDataSources">lists</a> that folks are creating 
 - Model this input as a graph, using Neo4j
 - Make the graph database available as a tool for use by the community
+ 
+# Goal
+- Create a tool to visualize/represent/understand/analyze EPA datasets using graph databases
+- Build an interface very similar to this (link to ICYJ Panama Papers) 
+- Tech Tool for #DataRefuge #DataRescue #GuerillaArchiving projects
+
+# Why
+- Can be used to 
+  - Help understand the EPA data universe, explore structure and infrom priorities
+  - Track growth in nomination and archival of the EPA data network
+  - Prioritize monitoring efforts (to see if links are active) 
+  - Detect shifts in vulerability 
+
+# Steps
+- Model the EPA data universe and nominations as a graph using Neo4j 
+- Seed the graph with source data - use data from nomination and scraping projects as data source for the graph model 
+- Process on how to add relationships to the data model 
+- Ability to visualize, browse and query EPA data by value, vulnerability, archival status and other properties
+- Interface to share and interact with data product 
+
+# Data Sources
+- Use data lists / data catalogs from:
+  - Nominations: from projects where people are creating lists of the data, and flagging for protection 
+  - Scraper tools 
+  - Other Events: 
+  - Other Projects: 
+
+- Seed Data 
+  -  Gureilla Archiving Event in Toronto, Hackathon Group 1 : 
+  - <a href="http://www.ppehlab.org/datarefuge">PPEH Lab Data Refuge </a> : Gov Climate Datasets Archive
+  - https://nepis.epa.gov/EPA/html/pubs/pubtitle.html
+
+# Graph Model 
+
+- Entities:
+  - Agency
+  - Program
+  - Datasets
+  - Resources
+  
+- Relationships (insert graph)
 
 
-# Objectives
-- Uncover structures
-- environmental scientists to do analyses 
-
-
-How to Use 
+# How to Use 
 - Download the Neo4J database here 
 - Requirements:
   - ..
@@ -27,55 +55,25 @@ How to Use
   - ..
 
 
-Input Data Sources
-- Gureilla Archiving Event in Toronto, Hackathon Group 1 : 
-- <a href="http://www.ppehlab.org/datarefuge">PPEH Lab Data Refuge </a> : Gov Climate Datasets Archive
-- https://nepis.epa.gov/EPA/html/pubs/pubtitle.html
+# Challenges
+- Data quality : completeness, duplicates, currency
 
+# Forward Looking
+- Infer schema and meta-data from data sources using projects like this (insert link) 
+- Create a data portal for all additional input sources (using CKAN for meta-data and API) 
+- Set up scripts to import new data sources, infer schema and meta-data into the Neo4j graph data model from the portal
+- Set up process for new additions of data
+- Set up process for defining relationships
 
-Project involves:
-- import data into a network graph
-- connecting the EPA to other entities 
-- documenting meta-data 
-
-
-
-
-- We think there is value in creating a view of the EPA data that is out there. 
-- Use the power of big data anlaysis
-
-
-
-ICYJ Approach
+# ICYJ Approach
 - They extracted the metadata of documents using Apache Solr and Tika, 
 - Then connected all the information together using the leaked databases, 
 - Creating a graph of nodes and edges in Neo4j and 
 - Made it accessible using Linkurious’ visualization application. 
  
+# Contributors
 
 
-track these interactions over time to observe how these datasets are changing, is the shape of the map changing? 
-
-Give us the ability to:
-check whether previous links are still active, and 
-whether shifts in the network indicate which sections of the data are vulnerable.
-track which data sets have already been archived. 
-Help assess which data sets are vulnerable 
-based on changes in the network 
-and archival history.
-
-When we rerun the script, we can track where our network is growing as the amount of data being archived increases,  
-but also seeing where the data is disappearing or being deleted. 
-
-
-
-
-
-
-Contributors
-
-
-Inspiration
+# Inspiration
 ICYJ 
-
 
